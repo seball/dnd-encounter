@@ -2,6 +2,7 @@
   "name": "dnd-encounter",
   "version": "0.0.0",
   "scripts": {
+    "build-page": "ng build --output-path page --base-href /dnd-encounter",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
