@@ -1,0 +1,16 @@
+<div class="character">
+    <!-- Display avatar -->
+    <img [src]="avatar" alt="Character Avatar" class="avatar" />
+  
+    <!-- Display Initiative, HP -->
+    <p>Initiative: {{ initiative }}</p>
+    <p>HP: {{ currentHp }} / {{ maxHp }}</p>
+  
+    <!-- Input field for HP value -->
+    <input type="number" [(ngModel)]="inputHp" placeholder="Enter HP amount" />
+  
+    <!-- Heal and Damage buttons -->
+    <button (click)="heal()">Heal</button>
+    <button (click)="damage()">Damage</button>
+  </div>
+  
